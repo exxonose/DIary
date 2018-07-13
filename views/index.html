@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/diary.css">
+</head>
+<body>
+      
+    <div class="container">
+      <h3 class="diary">Hello Dan, Welcome to My Diary</h3>
+      <h3 class="signout">Signout</h3>
+      <form>
+        <p>
+        <label for="new-entry">Add Entry</label>
+        <input id="new-entry" placeholder="Enter Your Entry Title Here..." type="text"><br>
+        <input id="content-entry" placeholder="Enter Your Entry Content Here..." type="text"> <br>
+          
+        <button class="add">Add</button>
+        <label for="new-entry">Set Reminder</label><input id="new-entry" type="text">
+        <input id="new-entry-time" type="datetime-local" name="new-entry-time" value="2018-07-12T00:00"
+        min="2018-01-01T00:00" max="2018-12-31T00:00">
+        <button class="add">Set</button>
+        
+      </p></form>
+      <h3>Diary Entries</h3>
+      <ul id="diary-entries">
+        <li><input type="datetime-local" value='2018-07-12T12:00' readonly="readonly"/><label class="label-title" ><a href="../page/content.html">Andela BootCamp Challenge</a> </label>
+          <input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li><input type="datetime-local" value='2018-07-12T05:00' readonly="readonly"/><label><a href="../page/content.html">Made Pancakes for friends </a></label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+    </div>
+        <div class="footer">Andela Bootcamp Dev. <script language="JavaScript">
+          var currentDate = new Date(); 
+          document.write(currentDate.getFullYear());
+        </script> </div> 
+  </body>
+</html>
+
+ 
