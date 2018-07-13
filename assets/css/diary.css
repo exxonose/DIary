@@ -1,0 +1,223 @@
+
+body {
+  background: #3A506B;
+  height: 100%;
+  min-height: 100%;
+  color: #3A506B;
+  font-size: 13px;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #1C2541;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button.edit:hover {
+  color: #5BC0BE;
+}
+
+
+/* Heading */
+h3,
+label[for='new-entry'] {
+  color: #0B132B;
+  font-weight: 500;
+  font-size: 15px;
+  border-bottom: 2px solid #ddd;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+input#content-entry {
+  width: 250px;
+  height: 50px;
+  margin-top: 20px;
+
+
+}
+
+input[type="text"],
+input#new-entry-time {
+  font-size: 12px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 0;
+  background: #1C2541;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+}
+input#new-entry-time:focus,
+input[type="datetime-local"]:focus {
+  color: #333;
+}
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* New Entry */
+label[for='new-entry'] {
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-entry {
+  width: 250px;
+  margin: 0;
+}
+input#new-entry-time {
+  width: 200px;
+  text-align: center;
+}
+p > button:hover {
+  color: #0FC57C;
+}
+button.add {
+    margin-top: 20px;
+}
+
+/* Diary Entries */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom:  2px solid #ddd;
+  color: #0B132B;
+}
+li > input[type="datetime-local"],
+li > label {
+  font-size: 14px;
+  line-height: 20px;
+  width: 250px;
+  padding: 0 0 0 11px;
+  color: #0B132B;
+}
+li >  input[type="text"] {
+  width: 250px;
+}
+
+li > input[type="datetime-local"] {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  height: 15px;
+  width: 250px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-family: Lato, sans-serif;
+  
+}
+li > .delete:hover {
+  color: #CF2323;
+}
+
+/* Edit Entry */
+ul li input[type=text] {
+  display:none;
+}
+ul li.editMode > input[type=text] {
+  display:block;
+}
+li.editMode > input[type="datetime-local"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+li.editMode > input[type="datetime-local"]:focus {
+  color: #333;
+}
+ul li.editMode label {
+  display:none;
+}
+
+
+entry-content {
+  display: block;
+  margin: 0 0 20px;
+   width: 200px;
+
+
+}
+
+.diary {
+    color: #3A506B;
+    padding: 10px 24px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+   text-align: left;
+    margin: 4px 0;
+    opacity: 0.9;
+ }
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #fafafa;
+    margin-left: auto;
+    margin-top: 100px;
+    height: 100%;
+    width: 700px;
+    justify-content: center;
+    margin: auto;
+}
+.signout {
+    color: #DC143C;
+    text-align: right;
+    display: block;
+}
+
+.content {
+  margin-left: 50px;
+  text-align: left;
+  width: 500px;
+  height:100%;
+  line-height: 20px;
+}
+
+
+.footer {
+position: fixed;
+color:  #0B132B;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .4rem;
+  background-color: #efefef;
+  text-align: center;
+
+}

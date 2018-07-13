@@ -1,0 +1,189 @@
+html {
+
+  overflow-x: hidden;
+  overflow-y: hidden; 
+  height: 100%;
+  font-size: 100%;
+}
+body {
+  background: #3A506B;
+  height: 100%;
+  min-height: 100%;
+  color: #616a78;
+  font-size: 13px;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+div {
+
+	display: block;
+}
+
+
+/* Selects all elements */
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+ input[type=text], 
+ input[type=email],
+ input[type=password]
+  {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+ input[type=text]:focus,
+ input[type=email]:focus, 
+ input[type=password]:focus 
+ {
+    background-color: #ddd;
+    outline: none;
+}
+
+h1{
+   font-family: sans-serif;
+   display: block;
+   font-size: 28px;
+   line-height: 1.6;
+   font-weight: 300;
+   color: #000000;
+}
+
+p {
+  max-width: 30em;
+  color: #000;
+  font-family:inherit;
+  letter-spacing:0.1em;
+  text-align:center;
+  margin: 40px auto;
+  text-transform: lowercase;
+  line-height: 115%;
+  font-size: 1em;
+  font-variant: small-caps;
+}
+
+p :hover {
+  text-decoration: none;
+}
+
+ form {
+    margin-top: -50px;
+ 	width: 500px;
+ 	color: #4682b4;
+
+
+ }
+
+h2 {
+	color: #4682b4;
+	font-size: 24px;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 600px;
+    padding: 24px;
+    background-color: #fafafa;
+    margin-left: auto;
+    margin-top: 100px;
+    justify-content: center;
+    margin: auto;
+}
+
+.signupbtn, .signinbtn {
+    background-color:#0B132B;
+    color: white;
+    padding: 16px 20px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.signupbtn:hover; .signinbtn:hover {
+    opacity: 1;
+}
+
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+     width: 500px;
+}
+
+.signout {
+    color: #CA0000;
+    text-align: center;
+}
+
+
+.smallHeader{
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+    border: thin solid grey;
+}
+
+.hdr-text{
+	 font-family: 'Trocchi', serif;
+	font-size: 25px;
+	font-weight: normal;
+
+   
+}
+
+.welcome {
+ font-size: 14px;
+ text-align:center;
+}
+
+.footer {
+position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  color:  #0B132B;
+
+}
+
+
+/*
+.sidebar {
+
+	position: absolute;
+	margin-top: -5px;
+	width: 200px;
+	  border: thin solid grey;
+	height: calc(100% - 5px);
+	left: -200px;
+	transition: ease .4s all;
+	color: #fff;
+    background-color: #43505f;
+}
+*/
