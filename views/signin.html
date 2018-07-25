@@ -1,25 +1,33 @@
 <!DOCTYPE html>
  <html>
-  <head>
-	 <title>Signin - My Diary</title>
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <head>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+   <title>Signin - My Diary</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
   </head>
  <body>
-	<div class ="container">   
+  <div class ="container">   
         <form>
-
-    <h1 class="hdr-text">Signin to My Diary</h1>
+<header><h1 class="hdr-text">Signin to My Diary</h1>
+</header>
+    
    
-	<input type="text" placeholder="Username" name="uname">
-	<input type="password" placeholder="Password" name="password">
-	<button type="submit" class="signinbtn">Signin</button>
+  <input type="text" id="user" name="user" placeholder="Username" required="required">
+  <input type="password" id="pass" placeholder="Password" name="pass" required="required">
+  <button type="submit" id="login" class="signinbtn">Signin</button>
+
+  <div class="container signin">
+      <p>Don't have an account yet? <a href="./signup.html">Sign up</a>.</p>
+     </div>
 
        </form>
     </div>
-       <div class="footer">Andela Bootcamp Dev. <script language="JavaScript">
-          var currentDate = new Date(); 
-          document.write(currentDate.getFullYear());
-        </script> </div> 
+       <div class="footer">Andela Bootcamp Dev. 2018</div> 
  </body>
 </html>
