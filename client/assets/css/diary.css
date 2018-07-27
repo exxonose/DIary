@@ -1,0 +1,371 @@
+html {
+width: 100vw;
+height: 100vh;
+overflow-wrap: 
+}
+
+body {
+   height: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  background: #43505f;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #1C2541;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button.edit:hover {
+  color: #5BC0BE;
+}
+
+
+/* Heading */
+h3,
+label[for='new-entry'] {
+  font-weight: 500;
+  font-size: 18px;
+  border-bottom: 2px solid #43505f;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+input#content-entry {
+  width: 250px;
+  height: 50px;
+  margin-top: 20px;
+
+
+}
+
+input[type="text"],
+input#new-entry-time {
+  font-size: 12px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 0;
+  background: #1C2541;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+}
+input#new-entry-time:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus {
+  color: #333;
+}
+
+input[type=time]::-webkit-inner-spin-button,
+input[type=time]::-webkit-outer-spin-button,
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* New Entry */
+label[for='new-entry'] {
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-entry {
+  width: 250px;
+  margin: 0;
+}
+input#new-entry-time {
+  width: 200px;
+  text-align: center;
+}
+p > button:hover {
+  color: #0FC57C;
+}
+button.add, button.set {
+    margin-top: 20px;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+/* Diary Entries */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  color: #0B132B;
+}
+li > input[type="time"],
+li > input[type="datetime-local"],
+li > label {
+  font-size: 14px;
+  line-height: 20px;
+  width: 400px;
+  padding: 0 0 0 11px;
+  color: #0B132B;
+}
+
+li >  input[type="text"] {
+  width: 200px;
+}
+
+li > input[type="time"],
+li > input[type="datetime-local"] {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  height: 15px;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-family: Lato, sans-serif;
+  
+}
+li > .delete:hover {
+  color: #CF2323;
+}
+
+/* Edit Entry */
+ul li input[type=text] {
+  display:none;
+}
+ul li.editMode > input[type=text] {
+  display:block;
+}
+li.editMode > input[type="time"],
+li.editMode > input[type="datetime-local"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+li.editMode > input[type="time"]:focus
+li.editMode > input[type="datetime-local"]:focus {
+  color: #333;
+}
+ul li.editMode label {
+  display:none;
+}
+
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background: #f1f1f1;
+
+
+}
+
+.content-title {
+cursor: pointer;
+outline: none;
+font-size: 18px;
+padding: 12px;
+width: 100%
+border: none;
+text-align: right;
+  
+}
+
+.active, content-title:hover {
+  background-color: #fff;
+}
+
+.diary-content {
+    background-color: #43505f;
+    width: 100%;
+    margin: auto;
+    border: 5px solid #2e3842;
+    margin-bottom: 30px;
+    padding: 30px;
+    }
+
+   
+
+.diary {
+    color: #fff;
+    padding: 6px 12px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin: 2px 0;
+    opacity: 0.9;
+    text-align: right;
+ }
+
+ .container {
+   display: flex;
+   width:  calc(0.7 * 100vw); 
+}
+.signout {
+    color: #007bff;
+    display: block;
+    justify-content: space-between;
+}
+
+.content {
+  margin-left: 50px;
+  text-align: left;
+  width: 500px;
+  height:100%;
+  line-height: 20px;
+}
+
+.sidebar-caption {
+padding-left: 75px;
+color: #007bff;
+margin-bottom: 40px;
+text-transform: uppercase;
+}
+
+.sidebar-img{
+  margin-top: 100px;
+  width: 220px;
+  height: 220px;
+  border: 5px solid #43505f;
+  border-radius: 50%;
+}
+.sidebar-item {
+  margin-left: 20px;
+ text-transform: uppercase;
+  font-size: 12px;
+  line-height: 2px;
+  font-family: 'droid', sans-serif;
+  padding: 10 20 10 0px;
+ 
+}
+.sidebar-item > a
+{
+   color: #0B132B;
+}
+
+.sidebar-text
+{
+   font-size: 20px;
+}
+span.fa {
+  color: #fafafa;
+  font-size: 20px;
+}
+.fa-pencil {
+  padding-left: 30px !important;
+}
+.fa-clock-o {
+  padding-left: 25px;
+}
+
+.sidebar {
+  display: block;
+  margin-top: -5px;
+  height: 100%;
+  width: calc(0.3 * 100vw);
+  transition: ease .4s all;
+  border: 5px solid #2e3842;
+  color: #fff;
+  background-color:#43505f;
+  padding-left: 20px;
+  margin-left: -30px;
+}
+
+
+.footer {
+position: fixed;
+color:  #0B132B;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .2rem;
+  background-color: #efefef;
+  text-align: center;
+
+}
+
+@media (max-width: 992px) {
+  .container {
+    width:970px;
+  }
+
+  body{
+    overflow: hidden;
+  }
+
+  .sidebar{
+   position: absolute;
+  }
+  .diary-content {
+     margin-top: auto;
+     margin-bottom: -300px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width:1170px;
+  }
+
+  body{
+    overflow: hidden;
+  }
+
+  .sidebar{
+   position: absolute;
+  }
+  .diary-content {
+    margin-top:auto;
+    margin-bottom: -300px;
+  }
+
+}
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/*https://css-tricks.com/almanac/properties/s/scrollbar/*/

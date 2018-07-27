@@ -1,0 +1,242 @@
+html {
+width: 100vw;
+height: 100vh;
+
+}
+body {
+  background: #3A506B;
+  color: #616a78;
+  font-size: 13px;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+div {
+
+  display: block;
+}
+
+
+/* Selects all elements */
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+ input[type=text], 
+ input[type=email],
+ input[type=password]
+  {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+ input[type=text]:focus,
+ input[type=email]:focus, 
+ input[type=password]:focus 
+ {
+    background-color: #ddd;
+    outline: none;
+}
+
+h1{
+   font-family: sans-serif;
+   display: block;
+   font-size: 28px;
+   line-height: 1.6;
+   font-weight: 300;
+   color: #000000;
+}
+
+p {
+  max-width: 30em;
+  color: #000;
+  font-family:inherit;
+  letter-spacing:0.1em;
+  text-align:center;
+  margin: 40px auto;
+  text-transform: lowercase;
+  line-height: 115%;
+  font-size: 1em;
+  font-variant: small-caps;
+}
+
+p :hover {
+  text-decoration: none;
+}
+
+ form {
+  margin-top: -50px;
+  width: 500px;
+  color: #4682b4;
+
+
+ }
+
+h2 {
+  color: #4682b4;
+  font-size: 24px;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 1170px;
+    padding: 20px;
+    background-color: #fafafa;
+    margin-left: 200px;
+    margin-top: 100px;
+    justify-content: center;
+    margin: auto;
+}
+
+.signupbtn, .signinbtn {
+    background-color:#0B132B;
+    color: white;
+    padding: 16px 20px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.signupbtn:hover; .signinbtn:hover {
+    opacity: 1;
+}
+
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+     width: 500px;
+}
+
+.signout {
+    color: #CA0000;
+    text-align: center;
+}
+
+
+.smallHeader{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+    border: thin solid grey;
+}
+
+.hdr-text{
+   font-family: 'Trocchi', serif;
+  font-size: 25px;
+  font-weight: normal;
+
+   
+}
+
+.frontpage-backgrd {
+  height: 100vh;
+  width: 100vw;
+  margin-left: -10px;
+  margin-top: -10px;
+  background-size: cover; 
+  background-position: 50% 48%;
+  background: url("../img/background-img.jpg");
+
+}
+
+.nav-item{
+  margin-top: 20px;
+  flex-direction: column-reverse;
+  border: 1px solid #AD1457;
+  background: #222C39;
+   justify-content: space-between;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+li{
+  float: left;
+  list-style: none;
+}
+
+.welcome {
+ font-size: 14px;
+ text-align:center;
+}
+
+.footer {
+position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  color:  #0B132B;
+
+}
+
+.nav-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+    cursor: pointer;
+     padding: 12px 26px;
+}
+.btn-custom {
+    background-color: #13ce67;
+    border: 2px solid #13ce67;
+    color: #fff;
+    transition: all 0.5s;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-radius: 30px !important;
+
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/*https://css-tricks.com/almanac/properties/s/scrollbar/*/
