@@ -1,0 +1,26 @@
+[
+
+{
+	"UserId": "1",
+	"Username": "Demola",
+	 "Password": "12345 "
+}
+
+{
+	"UserId": "2",
+	"Username": "Oshone",
+	 "Password": "123ab"
+}
+
+{
+	"UserId": "3",
+	"Username": "Peter",
+	 "Password": "abcdef"
+}
+
+{
+	"UserId": "4",
+	"Username": "Daniel",
+	 "Password": "12345"
+}
+]
