@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import AuthController from '../../controllers/DiaryController';
+import DiaryController from '../../controllers/DiaryController';
 
 const diaryRoutes = Router();
 
